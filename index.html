@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tạo Nội Dung Bằng AI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      font-size: 16px;
+    }
+    #output {
+      background-color: #f4f4f4;
+      padding: 10px;
+      white-space: pre-wrap;
+      border: 1px solid #ccc;
+      min-height: 80px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Tạo Nội Dung Bằng AI</h2>
+
+  <label for="topic">Chủ đề:</label>
+  <input type="text" id="topic" placeholder="Ví dụ: Marketing, Công nghệ, Chăm sóc sức khỏe"/>
+
+  <label for="style">Phong cách viết:</label>
+  <input type="text" id="style" placeholder="Ví dụ: Trang trọng, Thân thiện, Chuyên nghiệp"/>
+
+  <label for="details">Chi tiết bổ sung:</label>
+  <textarea id="details" rows="4" placeholder="Ví dụ: Viết một bài viết về sự phát triển của công nghệ AI trong 5 năm qua."></textarea>
+
+  <button onclick="generateContent()">Tạo Nội Dung</button>
+
+  <h3>Kết quả:</h3>
+  <div id="output">Nội dung sẽ hiển thị ở đây...</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
